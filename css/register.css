@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: auto;
+	position: relative;
+	background-color: white;
+	/* background-image: linear-gradient(0.25turn, rgba(0,127,255,0.25), transparent, rgba(255,127,0,0.25)); */
+	background-image: linear-gradient(rgba(0,128,255,0.1), rgba(0,128,255,0.1));
+}
+
+body.dark {
+	background-color: black;
+}
+
+body.orange {
+	background-image: linear-gradient(rgba(255,127,0,0.1), rgba(255,127,0,0.1));
+}
+
+#center_register {
+	max-width: 600px;
+	margin: auto;
+	padding-top: 128px;
+	padding-bottom: 200px;
+	font-family: arial;
+	color: black;
+	font-size: 24px;
+}
+
+body.dark #center_register {
+	color: white;
+}
+
+#form_register {
+	margin: auto;
+	padding: 8px;
+	list-style-type: none;
+	/* background: red; */
+	width: 584px;
+	
+	/* display: flex; */
+	/* flex-direction: row; */
+	/* flex-wrap: wrap; */
+	/* justify-content: space-between; */
+	/* align-content: space-between; */
+}
+
+#center_register li {
+	height: 80px;
+	line-height: 32px;
+}
+
+#legend_username, #legend_password {
+	font-size: 14px;
+	height: 32px;
+	line-height: 14px;
+	float: right;
+	text-align: right;
+	
+	display: flex;
+	align-items: center;
+	/* background: blue; */
+}
+
+#center_register input {
+	width: 578px;
+	height: 32px;
+	font-family: arial;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0080ff;
+	color: black;
+	background-color: white;
+}
+
+body.dark #center_register input {
+	background-color: black;
+	color: white;
+}
+
+body.orange #center_register input {
+	border-color: #ff7f00;
+}
+
+#errors_register {
+	/* background: orange; */
+	width: 100%;
+	height: auto;
+	font-family: arial;
+	margin: auto;
+	padding: 0px;
+	list-style-type: none;
+	color: red;
+}
+
+#errors_register li {
+	height: 20px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+#submit_register {
+	height: 40px !important;
+}
+
+#button_register {
+	width: 128px;
+	height: 32px;
+	font-family: arial;
+	background: white;
+	background-image: radial-gradient(#80c0ff, #0080ff);
+	border-width: 0px;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin: 8px auto;
+	display: block;
+}
+
+body.dark #button_register {
+	background-image: radial-gradient(#004080, #0080ff);
+	color: white;
+}
+
+body.orange #button_register {
+	background-image: radial-gradient(#ffbf80, #ff7f00);
+}
+
+body.dark.orange #button_register {
+	background-image: radial-gradient(#7f3f00, #ff7f00);
+}
+
+#button_register div {
+	position: relative;
+	font-size: 20px;
+}
+
+#success_register {
+	color: green;
+}
+
+#success_register a {
+	text-decoration: none;
+}
+
